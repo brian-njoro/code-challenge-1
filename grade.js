@@ -15,8 +15,21 @@ if(marks > 100){
 
 // evaluate grades
 function generateGrades(marks) {
-    if()
+    if(marks > 79) {
+        return `your grade is A`
+    } else if (marks >= 60 && marks <=79 ) {
+        return `your grade is B`
+    } else if (marks >= 49 && marks <=59 ) {
+        return `Your grade is C`
+    } else if (marks >= 40 && marks <=49){
+        return `Your grade is D`
+    } else if (marks < 40 && marks >= 0){
+        return `Your grade is E`
+    }
 }
+
+//test for function
+console.log (generateGrades(55))
 
 
 
