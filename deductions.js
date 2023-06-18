@@ -15,7 +15,7 @@ paye = function calculatePaye(basicSalary) {
 }
 
 // function to calculate nssf deductions
-nssfDeductions = function calculateNssf(basicSalary){
+nhifDeductions = function calculateNssf(basicSalary){
     if (basicSalary <= 5999) {
         return 150
     }else if (basicSalary >=6000 && basicSalary <=7999) {
@@ -52,3 +52,10 @@ nssfDeductions = function calculateNssf(basicSalary){
         return 1700
     }
 }
+
+nssfDeductions = 2000
+
+let netSalary 
+
+//calculate net salary
+netSalary = Math.ceil(basicSalary - nssfDeductions - nhifDeductions() - paye())
