@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')()
 let speed = prompt("Please enter speed in km/h:")
 let demeritPoints 
-let speedLimit = 70
+const speedLimit = 70
 
 //approved speed
 if (speed < 70) {
@@ -10,10 +10,12 @@ if (speed < 70) {
 
 //calculation of demerit points
 demeritPoints = function calculateDemeritPoints(speed, speedLimit) {
-    return (speed - speedLimit)/5
+    return Math.floor((speed - speedLimit)/5)
 }
 
-
+if(demeritPoints > 12) {
+    alert("YOUR LICENSE HAS BEEN SUSPENDED!!")
+}
 
 // test for demerit points
 console.log(demeritPoints(90,70))
