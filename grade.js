@@ -8,5 +8,15 @@ if (isNaN(marks)) {
     console.error(`invalid input! Please enter a number.`)
 }
 
+//stops operation if input is greater than 100
+if(marks > 100){
+    console.error(`INVALID INPUT!!`)
+}
+
+// evaluate grades
+function generateGrades(marks) {
+    if()
+}
+
 
 
