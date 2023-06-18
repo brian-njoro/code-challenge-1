@@ -26,12 +26,8 @@ function generateGrades(marks) {
     } else if (marks < 40 && marks >= 0){
         return `Your grade is E`
     }
-    return console.log(generateGrades(marks))
     
 }
 
-//test for function
-console.log (generateGrades(55))
-
-
-
+// test for function
+console.log(generateGrades(61))
